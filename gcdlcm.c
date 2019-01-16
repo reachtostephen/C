@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 int main(void){
-    int a,b,max,gcd,i;
+    int a,b,max,gcd,i,lcm;
     printf("Enter the two numbers");
     scanf("%d %d",&a,&b);
     if(a>b)
@@ -12,6 +12,8 @@ int main(void){
         if(a%i==0 && b%i==0)
             gcd =i;
     }
-    printf("The gcd value is %d", gcd);
+    lcm= (a*b)/gcd;
+    printf("The gcd value is %d\n", gcd);
+    printf("The lcm value is %d",lcm);
     return 0;
 }
