@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(void){
+  int a[10],n,i;
+  int *p;
+  int tot =0;
+  printf("Enter the Size of an array : ");
+  scanf("%d",&n);
+  printf("Enter the elements one by one : ");
+  for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+  }
+  p=a;
+  for(i=0;i<n;i++){
+    tot = tot + *p;
+    p++;
+  }
+  printf("%d",tot);
+}
